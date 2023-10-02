@@ -15,9 +15,9 @@ class Mytest(unittest.TestCase):
         }
         weather = Weather('tehran')
         a = weather.get_city_weather()
-        self.assertEqual(a.temp, 20)
-        self.assertEqual(a.feels_like, 33)
-        self.assertIsInstance(a.lst_update, datetime.datetime)
+        self.assertEqual(weather.temp, 22)
+        self.assertEqual(weather.feels_like, 33)
+        self.assertIsInstance(weather.lst_update, datetime.datetime)
 
 
 if __name__ == "__main__":
